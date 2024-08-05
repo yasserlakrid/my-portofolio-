@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffcccc 70%, #ccffcc 30%);
+    color: rgb(175, 170, 170);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.container {
+
+    width:minmax(60% 40%) ;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 80%;
+}
+
+.list {
+    grid-column: 2 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerlist {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    left: -5%;
+    border-radius: 10px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerlist span:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+    height: 50%;
+    background-color: #ccffcc;
+    cursor: pointer;
+}
+
+.innerlist span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 10%;
+    grid-column: 1 / 3;
+    font-size: small;
+}
+
+.examples {
+    grid-column: 3 / 4;
+}
+
+.pic {
+    
+}
+.pic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffcccc ;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left:10%;
+    bottom: 50%;
+    
+}
+.pic {
+    position: relative;
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+   
+    background-image: url('me.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    
+}
+
+.pic:hover {
+    position: absolute;
+    transition: 0.5;
+    transform: scaleX(10px);
+    box-shadow: 0px 0px 10px  #ccffcc;
+    
+}
+
+.name {
+    font-size: x-large;
+    color: rgb(175, 170, 170);
+}
+
+p {
+    font-size: medium;
+}
+
+.styling {
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+    width: 30%;
+    height: 20%;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ffcccc, 0 0 20px #ffcccc, 0 0 30px #ffcccc, 0 0 40px #ffcccc, 0 0 50px #ffcccc, 0 0 60px #ffcccc, 0 0 70px #ffcccc;
+}
