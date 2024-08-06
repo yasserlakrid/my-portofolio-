@@ -13,7 +13,7 @@ body {
 
 .container {
 
-    width:minmax(60% 40%) ;
+    width:60% ;
     height: 80%;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -46,7 +46,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.who-i-am{
+    text-align: start;
+}
 .innerlist span:hover {
     border-radius: 20px;
     transition: 0.5s;
@@ -121,14 +123,28 @@ p {
 
 .styling {
     position: absolute;
-    right: 0%;
-    bottom: 10%;
-    width: 30%;
+    font-family:Algerian;
+    
+    right:0 ;
+    bottom: 0%;
+    width: 40%;
     height: 20%;
-    font-size: 70px;
+    margin: 2%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 40px;
     font-weight: bold;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 10px #ffcccc, 0 0 20px #ffcccc, 0 0 30px #ffcccc, 0 0 40px #ffcccc, 0 0 50px #ffcccc, 0 0 60px #ffcccc, 0 0 70px #ffcccc;
 }
+@media (max-width:1000px) {
+    .styling{
+        display: none;
+    }
+    .container{
+        width: 80%;
+    }
+    }
