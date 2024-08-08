@@ -23,7 +23,6 @@ whoBtn.addEventListener('click',()=>{
             <li>I can manage social media accounts and create daily posts.</li>
         </ul>
     </div>`
-    console.log('who page displayed')
     whoPage = true
     projectsPage = false
     socialMediaPAge = false
